@@ -19,12 +19,16 @@ import {
   View,
 } from 'react-native';
 import AppNavigator from './src/navigation/AppNavigator'
-
-
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
+import { EvaIconsPack } from '@ui-kitten/eva-icons';
 const App = () => {
   return (
     <Provider store={store}>
+      <ApplicationProvider {...eva} theme={eva.light}>
+        <IconRegistry icons={EvaIconsPack} />
         <AppNavigator />
+      </ApplicationProvider>
     </Provider>
   );
 };

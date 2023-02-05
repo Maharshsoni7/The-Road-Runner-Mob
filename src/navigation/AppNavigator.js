@@ -13,6 +13,8 @@ import Images from '../utility/images';
 import Women from '../feature/women';
 import Kids from '../feature/kids';
 import Jordan from '../feature/jorden';
+import Login from '../feature/login';
+import SignUp from '../feature/signUp';
 
 
 const Stack = createStackNavigator();
@@ -110,23 +112,40 @@ const AppNavigator = () => {
     );
   }
 
-  // const HomeStack = () => {
-  //   return (
-  //     <Stack.Navigator initialRouteName={NavigationHeaders.Home}>
-  //       <Stack.Screen
-  //         name={NavigationHeaders.Home}
-  //         component={Men}
-  //         options={headerOptions}
-  //       />
-  //     </Stack.Navigator>
-  //   )
-  // }
+  const HomeStack = () => {
+    return (
+      <Stack.Navigator initialRouteName={NavigationHeaders.Home}>
+        <Stack.Screen
+          name={NavigationHeaders.Men}
+          component={Men}
+          options={headerOptions}
+        />
+        <Stack.Screen
+          name={NavigationHeaders.Women}
+          component={Women}
+          options={headerOptions}
+        />
+        <Stack.Screen
+          name={NavigationHeaders.Kids}
+          component={Kids}
+          options={headerOptions}
+        />
+        <Stack.Screen
+          name={NavigationHeaders.Jordan}
+          component={Jordan}
+          options={headerOptions}
+        />
+      </Stack.Navigator>
+    )
+  }
 
   return (
     <NavigationContainer ref={navigationRef}>
       <Stack.Navigator>
-        <Stack.Screen name={NavigationHeaders.Home} options={{ headerShown: false }} component={BottomTabNavigator} />
         <Stack.Screen name="Home" options={{ headerShown: false, }} component={SplashScreen} />
+        <Stack.Screen name={NavigationHeaders.Login} options={{ headerShown: false }} component={Login} />
+        <Stack.Screen name={NavigationHeaders.SingUp} options={{ headerShown: false }} component={SignUp} />
+        <Stack.Screen name={NavigationHeaders.Home} options={{ headerShown: false }} component={BottomTabNavigator} />
       </Stack.Navigator>
       {/* <Tab.Navigator >
        
