@@ -10,11 +10,5 @@ export default SplashScreenView = () => {
         <View style={styles.container}>
             <ImageBackground source={Images.background} style={styles.imageBackGroundStyle} />
         </View>
-
-        // 
-        //   <ImageBackground source={images.splashScreen.background} style={styles.imageBackGroundStyle}>
-        //     <Image imageSource={images.logo} imageStyle={styles.imageStyle} />
-        //     <Loader loading={true} color={colors.white} isComponentLoading={true} />
-        //   </ImageBackground>
     );
 };

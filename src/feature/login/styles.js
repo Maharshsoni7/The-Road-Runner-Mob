@@ -10,7 +10,7 @@ export default StyleSheet.create({
         // flex: 1,
         alignItems: 'center',
         // backgroundColor: 'red'
-        // justifyContent: 'flex-start',
+        justifyContent: 'space-between',
     },
     inputView: {
         marginVertical: 10,
