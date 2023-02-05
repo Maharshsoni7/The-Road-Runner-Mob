@@ -7,7 +7,7 @@ export default StyleSheet.create({
 
     },
     imageSubContainer: {
-        flex: 1,
+        // flex: 1,
         alignItems: 'center',
         // backgroundColor: 'red'
         // justifyContent: 'flex-start',

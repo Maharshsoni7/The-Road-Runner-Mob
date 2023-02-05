@@ -13,7 +13,7 @@ const LoginScreen = () => {
     return (
         <View style={styles.container}>
             <View style={styles.imageSubContainer}>
-                <Image source={Images.sapiens} style={{ height: 300, width: 300 }} resizeMode='cover' />
+                <Image source={Images.sapiens} style={{ height: 260, width: 300 }} resizeMode='center' />
                 <Text style={{ marginBottom: 20, alignSelf: 'center', fontWeight: 'bold' }}>Welcome to Road-Runner</Text>
             </View>
             <View style={styles.inputView} >

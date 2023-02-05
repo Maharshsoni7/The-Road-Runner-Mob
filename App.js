@@ -9,15 +9,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './src/Store';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
 import AppNavigator from './src/navigation/AppNavigator'
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
